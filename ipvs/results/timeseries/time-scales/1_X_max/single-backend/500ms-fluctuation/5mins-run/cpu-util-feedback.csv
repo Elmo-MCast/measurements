@@ -1,8 +1,0 @@
-feedback-interval,server-script,lb-script,memcache-daemon
-1ms,17,10,22
-5ms,6,3,8
-25ms,2,3,2.5
-205ms,0.3,1,0.7
-505ms,0.3,0.3,0.4
-1.005s,0.2,0.2,0.3
-5.005s,0.2,0.2,0.2
