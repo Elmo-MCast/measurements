@@ -1,6 +1,7 @@
 # Note: make sure host folders have a+rwx access (i.e., chmod a+rwx *) 
 # Also, make sure that docker is installed (wget -qO- https://get.docker.com/ | sh)
 
+docker rm jupyter
 docker run -d -p 8888:8888 --name jupyter \
 	--user root \
 	-v /root/mshahbaz/notebooks/:/home/jovyan/work/ \
