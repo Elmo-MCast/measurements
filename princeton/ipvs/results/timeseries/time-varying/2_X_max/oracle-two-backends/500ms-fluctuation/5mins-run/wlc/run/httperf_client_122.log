@@ -1,0 +1,75 @@
+httperf --verbose --hog --timeout=50 --client=0/1 --server=172.16.116.116 --port=8080 --uri=/ --rate=16 --send-buffer=4096 --recv-buffer=16384 --num-conns=4800 --num-calls=1
+httperf: maximum number of open descriptors = 65535
+Maximum connect burst length: 1
+
+Connection lifetime histogram (time in ms):
+             :
+             9.5 2
+            10.5 302
+            11.5 394
+            12.5 423
+            13.5 637
+            14.5 720
+            15.5 477
+            16.5 340
+            17.5 185
+            18.5 199
+            19.5 189
+            20.5 232
+            21.5 254
+            22.5 213
+            23.5 118
+            24.5 60
+            25.5 19
+            26.5 15
+            27.5 8
+            28.5 10
+            29.5 1
+             :
+            32.5 1
+             :
+            34.5 1
+
+Total: connections 4800 requests 4800 replies 4800 test-duration 299.956 s
+
+Connection rate: 16.0 conn/s (62.5 ms/conn, <=1 concurrent connections)
+Connection time [ms]: min 10.0 avg 15.9 max 34.2 median 14.5 stddev 3.8
+Connection time [ms]: connect 0.6
+Connection length [replies/conn]: 1.000
+
+Request rate: 16.0 req/s (62.5 ms/req)
+Request size [B]: 67.0
+
+Reply rate [replies/s]: min 16.0 avg 16.0 max 16.0 stddev 0.0 (299 samples)
+Percentages of the replies served at a given rate:
+   50%: 15
+   66%: 15
+   75%: 15
+   80%: 15
+   90%: 15
+   95%: 15
+   98%: 15
+   99%: 15
+  100%: 16
+
+Reply time [ms]: response 14.8 transfer 0.5
+Percentages of the requests served within a certain time (ms) :
+   50%: 13
+   66%: 15
+   75%: 17
+   80%: 18
+   90%: 20
+   95%: 21
+   98%: 22
+   99%: 23
+  100%: 28
+
+Reply size [B]: header 162.0 content 72.0 footer 1.0 (total 235.0)
+Reply status: 1xx=0 2xx=4800 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 250.24 system 49.22 (user 83.4% system 16.4% total 99.8%)
+Net I/O: 4.7 KB/s (0.0*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+

@@ -1,0 +1,189 @@
+httperf --verbose --hog --timeout=50 --client=0/1 --server=172.16.116.116 --port=8080 --uri=/ --rate=24 --send-buffer=4096 --recv-buffer=16384 --num-conns=4320 --num-calls=1
+httperf: maximum number of open descriptors = 65535
+Maximum connect burst length: 1
+
+Connection lifetime histogram (time in ms):
+             :
+            10.5 408
+            11.5 880
+            12.5 561
+            13.5 384
+            14.5 307
+            15.5 392
+            16.5 460
+            17.5 237
+            18.5 155
+            19.5 98
+            20.5 85
+            21.5 59
+            22.5 40
+            23.5 33
+            24.5 23
+            25.5 11
+            26.5 14
+            27.5 14
+            28.5 8
+            29.5 8
+            30.5 12
+            31.5 10
+            32.5 9
+            33.5 3
+            34.5 4
+            35.5 3
+            36.5 2
+            37.5 1
+            38.5 6
+            39.5 2
+            40.5 1
+            41.5 1
+            42.5 6
+            43.5 3
+             :
+            45.5 2
+             :
+            47.5 3
+            48.5 3
+            49.5 1
+            50.5 2
+            51.5 3
+             :
+            53.5 3
+            54.5 1
+            55.5 4
+            56.5 1
+            57.5 2
+             :
+            59.5 1
+            60.5 1
+             :
+            63.5 1
+            64.5 1
+             :
+            66.5 1
+            67.5 1
+            68.5 1
+             :
+            70.5 1
+             :
+            72.5 1
+            73.5 1
+             :
+            75.5 1
+            76.5 1
+            77.5 1
+             :
+            80.5 1
+             :
+            84.5 1
+             :
+            86.5 1
+             :
+            89.5 2
+             :
+           113.5 1
+             :
+           137.5 1
+             :
+           517.5 1
+             :
+           521.5 1
+             :
+           535.5 1
+             :
+           544.5 1
+             :
+           569.5 1
+             :
+           583.5 1
+             :
+           598.5 1
+             :
+           606.5 1
+             :
+           608.5 1
+             :
+           620.5 2
+             :
+           623.5 1
+             :
+           625.5 1
+           626.5 1
+             :
+           633.5 1
+           634.5 1
+             :
+           652.5 1
+             :
+           678.5 1
+             :
+           684.5 2
+           685.5 1
+             :
+           687.5 1
+             :
+           689.5 1
+             :
+           693.5 1
+             :
+           699.5 2
+             :
+           701.5 1
+             :
+           707.5 1
+             :
+           727.5 1
+           728.5 1
+             :
+           742.5 1
+             :
+           754.5 1
+             :
+           769.5 1
+             :
+           779.5 1
+             :
+           786.5 1
+
+Total: connections 4320 requests 4320 replies 4320 test-duration 179.977 s
+
+Connection rate: 24.0 conn/s (41.7 ms/conn, <=4 concurrent connections)
+Connection time [ms]: min 10.1 avg 20.5 max 786.0 median 13.5 stddev 58.4
+Connection time [ms]: connect 0.7
+Connection length [replies/conn]: 1.000
+
+Request rate: 24.0 req/s (41.7 ms/req)
+Request size [B]: 67.0
+
+Reply rate [replies/s]: min 23.0 avg 24.0 max 25.0 stddev 0.5 (179 samples)
+Percentages of the replies served at a given rate:
+   50%: 23
+   66%: 23
+   75%: 23
+   80%: 23
+   90%: 24
+   95%: 24
+   98%: 24
+   99%: 24
+  100%: 25
+
+Reply time [ms]: response 18.4 transfer 1.3
+Percentages of the requests served within a certain time (ms) :
+   50%: 12
+   66%: 14
+   75%: 15
+   80%: 15
+   90%: 17
+   95%: 22
+   98%: 39
+   99%: 74
+  100%: 779
+
+Reply size [B]: header 162.0 content 72.0 footer 1.0 (total 235.0)
+Reply status: 1xx=0 2xx=4320 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 148.38 system 31.23 (user 82.4% system 17.4% total 99.8%)
+Net I/O: 7.1 KB/s (0.1*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+

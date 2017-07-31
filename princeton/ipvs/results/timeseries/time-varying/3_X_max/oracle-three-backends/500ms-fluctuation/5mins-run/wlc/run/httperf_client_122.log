@@ -1,0 +1,78 @@
+httperf --verbose --hog --timeout=50 --client=0/1 --server=172.16.116.116 --port=8080 --uri=/ --rate=24 --send-buffer=4096 --recv-buffer=16384 --num-conns=7200 --num-calls=1
+httperf: maximum number of open descriptors = 65535
+Maximum connect burst length: 1
+
+Connection lifetime histogram (time in ms):
+             :
+            10.5 513
+            11.5 1587
+            12.5 828
+            13.5 952
+            14.5 729
+            15.5 581
+            16.5 774
+            17.5 358
+            18.5 265
+            19.5 157
+            20.5 111
+            21.5 117
+            22.5 106
+            23.5 50
+            24.5 29
+            25.5 16
+            26.5 10
+            27.5 4
+            28.5 4
+            29.5 3
+            30.5 2
+             :
+            35.5 1
+             :
+            37.5 1
+            38.5 1
+             :
+            43.5 1
+
+Total: connections 7200 requests 7200 replies 7200 test-duration 299.973 s
+
+Connection rate: 24.0 conn/s (41.7 ms/conn, <=2 concurrent connections)
+Connection time [ms]: min 10.2 avg 14.4 max 43.5 median 13.5 stddev 3.2
+Connection time [ms]: connect 0.5
+Connection length [replies/conn]: 1.000
+
+Request rate: 24.0 req/s (41.7 ms/req)
+Request size [B]: 67.0
+
+Reply rate [replies/s]: min 23.9 avg 24.0 max 24.0 stddev 0.0 (299 samples)
+Percentages of the replies served at a given rate:
+   50%: 23
+   66%: 23
+   75%: 23
+   80%: 23
+   90%: 23
+   95%: 23
+   98%: 23
+   99%: 23
+  100%: 24
+
+Reply time [ms]: response 13.3 transfer 0.5
+Percentages of the requests served within a certain time (ms) :
+   50%: 12
+   66%: 13
+   75%: 15
+   80%: 15
+   90%: 17
+   95%: 19
+   98%: 21
+   99%: 22
+  100%: 34
+
+Reply size [B]: header 162.0 content 72.0 footer 1.0 (total 235.0)
+Reply status: 1xx=0 2xx=7200 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 247.76 system 51.62 (user 82.6% system 17.2% total 99.8%)
+Net I/O: 7.1 KB/s (0.1*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+

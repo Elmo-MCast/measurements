@@ -1,0 +1,232 @@
+httperf --verbose --hog --timeout=50 --client=0/1 --server=172.16.116.116 --port=8080 --uri=/ --rate=24 --send-buffer=4096 --recv-buffer=16384 --num-conns=4320 --num-calls=1
+httperf: maximum number of open descriptors = 65535
+Maximum connect burst length: 1
+
+Connection lifetime histogram (time in ms):
+             :
+            10.5 801
+            11.5 1245
+            12.5 416
+            13.5 308
+            14.5 291
+            15.5 356
+            16.5 396
+            17.5 203
+            18.5 72
+            19.5 43
+            20.5 15
+            21.5 17
+            22.5 12
+            23.5 5
+            24.5 3
+            25.5 3
+            26.5 1
+            27.5 1
+            28.5 1
+             :
+            33.5 1
+             :
+            40.5 1
+            41.5 1
+             :
+            44.5 1
+             :
+            48.5 1
+             :
+            52.5 1
+             :
+            54.5 1
+             :
+            59.5 2
+             :
+            61.5 1
+             :
+            72.5 1
+            73.5 1
+            74.5 1
+             :
+            77.5 1
+             :
+            96.5 1
+             :
+           105.5 1
+             :
+           110.5 2
+             :
+           120.5 1
+           121.5 1
+             :
+           128.5 1
+           129.5 1
+           130.5 1
+             :
+           137.5 1
+             :
+           143.5 1
+             :
+           149.5 1
+             :
+           151.5 3
+             :
+           154.5 1
+           155.5 1
+             :
+           158.5 1
+             :
+           160.5 1
+             :
+           165.5 2
+           166.5 1
+           167.5 1
+             :
+           173.5 1
+             :
+           184.5 1
+           185.5 4
+           186.5 2
+             :
+           188.5 2
+           189.5 1
+             :
+           191.5 1
+           192.5 1
+           193.5 2
+           194.5 1
+           195.5 1
+           196.5 3
+           197.5 1
+           198.5 1
+             :
+           201.5 1
+             :
+           204.5 2
+           205.5 2
+           206.5 2
+             :
+           208.5 2
+           209.5 1
+             :
+           213.5 1
+             :
+           215.5 1
+             :
+           218.5 4
+             :
+           221.5 1
+           222.5 1
+           223.5 1
+             :
+           225.5 1
+             :
+           227.5 2
+           228.5 1
+           229.5 1
+           230.5 3
+             :
+           233.5 1
+           234.5 2
+           235.5 1
+             :
+           238.5 1
+           239.5 1
+           240.5 2
+             :
+           255.5 1
+             :
+           258.5 2
+             :
+           262.5 1
+           263.5 1
+           264.5 1
+           265.5 2
+             :
+           268.5 1
+             :
+           273.5 2
+             :
+           277.5 1
+             :
+           281.5 1
+             :
+           288.5 1
+           289.5 1
+           290.5 1
+             :
+           294.5 2
+           295.5 1
+             :
+           297.5 1
+             :
+           303.5 1
+             :
+           306.5 1
+             :
+           309.5 1
+             :
+           319.5 1
+             :
+           325.5 1
+             :
+           329.5 1
+             :
+           332.5 2
+             :
+           337.5 1
+             :
+           342.5 1
+             :
+           344.5 2
+             :
+           351.5 1
+             :
+           369.5 1
+             :
+           379.5 1
+             :
+           381.5 1
+             :
+           387.5 1
+
+Total: connections 4320 requests 4320 replies 4320 test-duration 179.974 s
+
+Connection rate: 24.0 conn/s (41.7 ms/conn, <=2 concurrent connections)
+Connection time [ms]: min 10.1 avg 19.1 max 387.9 median 12.5 stddev 36.4
+Connection time [ms]: connect 0.6
+Connection length [replies/conn]: 1.000
+
+Request rate: 24.0 req/s (41.7 ms/req)
+Request size [B]: 67.0
+
+Reply rate [replies/s]: min 22.9 avg 24.0 max 25.0 stddev 0.5 (179 samples)
+Percentages of the replies served at a given rate:
+   50%: 23
+   66%: 23
+   75%: 23
+   80%: 23
+   90%: 24
+   95%: 24
+   98%: 24
+   99%: 24
+  100%: 25
+
+Reply time [ms]: response 17.5 transfer 0.9
+Percentages of the requests served within a certain time (ms) :
+   50%: 10
+   66%: 12
+   75%: 14
+   80%: 14
+   90%: 15
+   95%: 17
+   98%: 164
+   99%: 220
+  100%: 387
+
+Reply size [B]: header 162.0 content 72.0 footer 1.0 (total 235.0)
+Reply status: 1xx=0 2xx=4320 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 148.34 system 31.24 (user 82.4% system 17.4% total 99.8%)
+Net I/O: 7.1 KB/s (0.1*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+

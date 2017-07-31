@@ -1,0 +1,70 @@
+httperf --verbose --hog --timeout=3 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=8 --send-buffer=4096 --recv-buffer=16384 --num-conns=500 --num-calls=1
+httperf: maximum number of open descriptors = 4096
+Maximum connect burst length: 1
+
+Connection lifetime histogram (time in ms):
+             :
+             7.5 48
+             8.5 57
+             9.5 49
+            10.5 106
+            11.5 63
+            12.5 38
+            13.5 21
+            14.5 37
+            15.5 21
+            16.5 11
+            17.5 2
+            18.5 7
+            19.5 2
+            20.5 3
+            21.5 5
+            22.5 1
+             :
+            24.5 1
+             :
+            27.5 1
+
+Total: connections 500 requests 482 replies 473 test-duration 64.625 s
+
+Connection rate: 7.7 conn/s (129.3 ms/conn, <=8 concurrent connections)
+Connection time [ms]: min 7.3 avg 11.4 max 27.5 median 10.5 stddev 3.1
+Connection time [ms]: connect 0.9
+Connection length [replies/conn]: 1.000
+
+Request rate: 7.5 req/s (134.1 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 7.4 max 8.0 stddev 1.3 (64 samples)
+Percentages of the replies served at a given rate:
+   50%: 7
+   66%: 7
+   75%: 7
+   80%: 7
+   90%: 7
+   95%: 7
+   98%: 7
+   99%: 7
+  100%: 8
+
+Reply time [ms]: response 10.3 transfer 0.1
+Percentages of the requests served within a certain time (ms) :
+   50%: 9
+   66%: 10
+   75%: 11
+   80%: 11
+   90%: 13
+   95%: 14
+   98%: 18
+   99%: 20
+  100%: 27
+
+Reply size [B]: header 167.0 content 59.0 footer 0.0 (total 226.0)
+Reply status: 1xx=0 2xx=473 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 41.63 system 22.93 (user 64.4% system 35.5% total 99.9%)
+Net I/O: 2.1 KB/s (0.0*10^6 bps)
+
+Errors: total 27 client-timo 27 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+

@@ -1,0 +1,83 @@
+httperf --verbose --hog --timeout=50 --client=0/1 --server=172.16.116.116 --port=8080 --uri=/ --rate=8 --send-buffer=4096 --recv-buffer=16384 --num-conns=1440 --num-calls=1
+httperf: maximum number of open descriptors = 65535
+Maximum connect burst length: 1
+
+Connection lifetime histogram (time in ms):
+             :
+            10.5 86
+            11.5 360
+            12.5 176
+            13.5 122
+            14.5 96
+            15.5 102
+            16.5 205
+            17.5 111
+            18.5 75
+            19.5 33
+            20.5 24
+            21.5 14
+            22.5 14
+            23.5 9
+            24.5 3
+             :
+            26.5 1
+             :
+            45.5 1
+             :
+           145.5 1
+             :
+           149.5 2
+             :
+           207.5 1
+             :
+           245.5 1
+             :
+           261.5 1
+             :
+           326.5 1
+             :
+           331.5 1
+
+Total: connections 1440 requests 1440 replies 1440 test-duration 179.888 s
+
+Connection rate: 8.0 conn/s (124.9 ms/conn, <=2 concurrent connections)
+Connection time [ms]: min 10.3 avg 15.6 max 331.2 median 13.5 stddev 17.0
+Connection time [ms]: connect 0.8
+Connection length [replies/conn]: 1.000
+
+Request rate: 8.0 req/s (124.9 ms/req)
+Request size [B]: 67.0
+
+Reply rate [replies/s]: min 7.0 avg 8.0 max 9.0 stddev 0.1 (179 samples)
+Percentages of the replies served at a given rate:
+   50%: 7
+   66%: 7
+   75%: 7
+   80%: 7
+   90%: 7
+   95%: 7
+   98%: 7
+   99%: 7
+  100%: 9
+
+Reply time [ms]: response 14.2 transfer 0.5
+Percentages of the requests served within a certain time (ms) :
+   50%: 12
+   66%: 14
+   75%: 15
+   80%: 15
+   90%: 16
+   95%: 17
+   98%: 19
+   99%: 21
+  100%: 330
+
+Reply size [B]: header 162.0 content 72.0 footer 1.0 (total 235.0)
+Reply status: 1xx=0 2xx=1440 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 152.78 system 26.81 (user 84.9% system 14.9% total 99.8%)
+Net I/O: 2.4 KB/s (0.0*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+

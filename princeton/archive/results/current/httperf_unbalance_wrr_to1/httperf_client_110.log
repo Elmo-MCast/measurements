@@ -1,0 +1,1200 @@
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=20 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 2000 requests 2000 replies 2000 test-duration 99.960 s
+
+Connection rate: 20.0 conn/s (50.0 ms/conn, <=1 concurrent connections)
+Connection time [ms]: min 0.5 avg 4.5 max 45.4 median 1.5 stddev 6.3
+Connection time [ms]: connect 0.5
+Connection length [replies/conn]: 1.000
+
+Request rate: 20.0 req/s (50.0 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 20.0 avg 20.0 max 20.0 stddev 0.0 (19 samples)
+Reply time [ms]: response 3.9 transfer 0.1
+Reply size [B]: header 242.0 content 72.0 footer 0.0 (total 314.0)
+Reply status: 1xx=0 2xx=2000 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 43.91 system 55.90 (user 43.9% system 55.9% total 99.8%)
+Net I/O: 7.4 KB/s (0.1*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=40 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 2000 requests 1898 replies 1632 test-duration 50.876 s
+
+Connection rate: 39.3 conn/s (25.4 ms/conn, <=50 concurrent connections)
+Connection time [ms]: min 0.6 avg 5.2 max 1989.9 median 1.5 stddev 65.3
+Connection time [ms]: connect 25.3
+Connection length [replies/conn]: 1.000
+
+Request rate: 37.3 req/s (26.8 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 1.6 avg 32.6 max 40.0 stddev 12.8 (10 samples)
+Reply time [ms]: response 4.0 transfer 0.0
+Reply size [B]: header 266.0 content 76.0 footer 0.0 (total 342.0)
+Reply status: 1xx=0 2xx=1632 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 17.64 system 33.14 (user 34.7% system 65.1% total 99.8%)
+Net I/O: 13.2 KB/s (0.1*10^6 bps)
+
+Errors: total 368 client-timo 368 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=60 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 2000 requests 1854 replies 1670 test-duration 35.282 s
+
+Connection rate: 56.7 conn/s (17.6 ms/conn, <=49 concurrent connections)
+Connection time [ms]: min 0.7 avg 17.3 max 1994.9 median 2.5 stddev 127.5
+Connection time [ms]: connect 25.0
+Connection length [replies/conn]: 1.000
+
+Request rate: 52.5 req/s (19.0 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 26.0 avg 47.7 max 60.0 stddev 14.8 (7 samples)
+Reply time [ms]: response 13.0 transfer 0.0
+Reply size [B]: header 265.0 content 76.0 footer 0.0 (total 341.0)
+Reply status: 1xx=0 2xx=1670 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 9.36 system 25.82 (user 26.5% system 73.2% total 99.7%)
+Net I/O: 19.2 KB/s (0.2*10^6 bps)
+
+Errors: total 330 client-timo 330 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=80 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 2000 requests 2000 replies 1974 test-duration 25.964 s
+
+Connection rate: 77.0 conn/s (13.0 ms/conn, <=19 concurrent connections)
+Connection time [ms]: min 0.6 avg 18.1 max 1035.9 median 4.5 stddev 64.8
+Connection time [ms]: connect 2.1
+Connection length [replies/conn]: 1.000
+
+Request rate: 77.0 req/s (13.0 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 75.6 avg 78.8 max 80.0 stddev 1.8 (5 samples)
+Reply time [ms]: response 15.9 transfer 0.1
+Reply size [B]: header 257.0 content 75.0 footer 0.0 (total 332.0)
+Reply status: 1xx=0 2xx=1974 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 8.34 system 17.54 (user 32.1% system 67.5% total 99.7%)
+Net I/O: 29.7 KB/s (0.2*10^6 bps)
+
+Errors: total 26 client-timo 26 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=100 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 2000 requests 1977 replies 1934 test-duration 21.331 s
+
+Connection rate: 93.8 conn/s (10.7 ms/conn, <=32 concurrent connections)
+Connection time [ms]: min 0.6 avg 29.0 max 1977.7 median 6.5 stddev 120.2
+Connection time [ms]: connect 5.0
+Connection length [replies/conn]: 1.000
+
+Request rate: 92.7 req/s (10.8 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 87.2 avg 96.3 max 100.0 stddev 6.1 (4 samples)
+Reply time [ms]: response 25.5 transfer 0.1
+Reply size [B]: header 259.0 content 75.0 footer 0.0 (total 334.0)
+Reply status: 1xx=0 2xx=1934 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 6.00 system 15.26 (user 28.1% system 71.5% total 99.6%)
+Net I/O: 35.6 KB/s (0.3*10^6 bps)
+
+Errors: total 66 client-timo 66 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=120 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 1
+
+Total: connections 2000 requests 1982 replies 1925 test-duration 18.434 s
+
+Connection rate: 108.5 conn/s (9.2 ms/conn, <=41 concurrent connections)
+Connection time [ms]: min 0.7 avg 26.1 max 1006.9 median 6.5 stddev 109.7
+Connection time [ms]: connect 6.5
+Connection length [replies/conn]: 1.000
+
+Request rate: 107.5 req/s (9.3 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 112.2 avg 117.3 max 120.0 stddev 4.4 (3 samples)
+Reply time [ms]: response 22.7 transfer 0.0
+Reply size [B]: header 261.0 content 76.0 footer 0.0 (total 337.0)
+Reply status: 1xx=0 2xx=1925 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 4.81 system 13.56 (user 26.1% system 73.5% total 99.6%)
+Net I/O: 41.4 KB/s (0.3*10^6 bps)
+
+Errors: total 75 client-timo 75 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=140 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 2
+
+Total: connections 2000 requests 1987 replies 1948 test-duration 16.093 s
+
+Connection rate: 124.3 conn/s (8.0 ms/conn, <=36 concurrent connections)
+Connection time [ms]: min 0.9 avg 31.1 max 988.6 median 7.5 stddev 126.3
+Connection time [ms]: connect 5.8
+Connection length [replies/conn]: 1.000
+
+Request rate: 123.5 req/s (8.1 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 113.6 avg 129.9 max 139.8 stddev 14.2 (3 samples)
+Reply time [ms]: response 27.3 transfer 0.0
+Reply size [B]: header 261.0 content 76.0 footer 0.0 (total 337.0)
+Reply status: 1xx=0 2xx=1948 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 4.02 system 12.01 (user 25.0% system 74.6% total 99.6%)
+Net I/O: 47.9 KB/s (0.4*10^6 bps)
+
+Errors: total 52 client-timo 52 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=160 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 3
+
+Total: connections 2000 requests 1981 replies 1906 test-duration 14.387 s
+
+Connection rate: 139.0 conn/s (7.2 ms/conn, <=45 concurrent connections)
+Connection time [ms]: min 0.8 avg 28.2 max 981.6 median 8.5 stddev 109.4
+Connection time [ms]: connect 7.0
+Connection length [replies/conn]: 1.000
+
+Request rate: 137.7 req/s (7.3 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 151.6 avg 155.3 max 159.0 stddev 5.2 (2 samples)
+Reply time [ms]: response 24.3 transfer 0.0
+Reply size [B]: header 263.0 content 76.0 footer 0.0 (total 339.0)
+Reply status: 1xx=0 2xx=1906 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 2.92 system 11.40 (user 20.3% system 79.3% total 99.6%)
+Net I/O: 52.9 KB/s (0.4*10^6 bps)
+
+Errors: total 94 client-timo 94 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=180 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 2
+
+Total: connections 2000 requests 1993 replies 1972 test-duration 12.001 s
+
+Connection rate: 166.7 conn/s (6.0 ms/conn, <=38 concurrent connections)
+Connection time [ms]: min 0.7 avg 31.0 max 894.3 median 8.5 stddev 109.3
+Connection time [ms]: connect 4.0
+Connection length [replies/conn]: 1.000
+
+Request rate: 166.1 req/s (6.0 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 177.6 avg 178.6 max 179.6 stddev 1.4 (2 samples)
+Reply time [ms]: response 27.2 transfer 0.0
+Reply size [B]: header 262.0 content 76.0 footer 0.0 (total 338.0)
+Reply status: 1xx=0 2xx=1972 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 2.84 system 9.10 (user 23.7% system 75.9% total 99.5%)
+Net I/O: 65.1 KB/s (0.5*10^6 bps)
+
+Errors: total 28 client-timo 28 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=200 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 3
+
+Total: connections 2000 requests 1937 replies 1860 test-duration 11.900 s
+
+Connection rate: 168.1 conn/s (6.0 ms/conn, <=70 concurrent connections)
+Connection time [ms]: min 0.8 avg 19.2 max 1994.6 median 8.5 stddev 104.5
+Connection time [ms]: connect 10.6
+Connection length [replies/conn]: 1.000
+
+Request rate: 162.8 req/s (6.1 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 172.0 avg 186.0 max 200.0 stddev 19.8 (2 samples)
+Reply time [ms]: response 13.7 transfer 0.0
+Reply size [B]: header 266.0 content 76.0 footer 0.0 (total 342.0)
+Reply status: 1xx=0 2xx=1860 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 2.21 system 9.64 (user 18.6% system 81.0% total 99.6%)
+Net I/O: 62.9 KB/s (0.5*10^6 bps)
+
+Errors: total 140 client-timo 140 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=220 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 2
+
+Total: connections 2000 requests 1951 replies 1871 test-duration 10.795 s
+
+Connection rate: 185.3 conn/s (5.4 ms/conn, <=58 concurrent connections)
+Connection time [ms]: min 0.7 avg 12.8 max 978.4 median 9.5 stddev 49.2
+Connection time [ms]: connect 7.9
+Connection length [replies/conn]: 1.000
+
+Request rate: 180.7 req/s (5.5 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 155.6 avg 187.1 max 218.6 stddev 44.5 (2 samples)
+Reply time [ms]: response 8.5 transfer 0.0
+Reply size [B]: header 266.0 content 76.0 footer 0.0 (total 342.0)
+Reply status: 1xx=0 2xx=1871 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 2.00 system 8.74 (user 18.5% system 81.0% total 99.5%)
+Net I/O: 69.8 KB/s (0.6*10^6 bps)
+
+Errors: total 129 client-timo 129 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=240 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 2
+
+Total: connections 2000 requests 1915 replies 1858 test-duration 9.943 s
+
+Connection rate: 201.2 conn/s (5.0 ms/conn, <=68 concurrent connections)
+Connection time [ms]: min 1.1 avg 17.8 max 987.4 median 9.5 stddev 80.1
+Connection time [ms]: connect 8.1
+Connection length [replies/conn]: 1.000
+
+Request rate: 192.6 req/s (5.2 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 233.0 avg 233.0 max 233.0 stddev 0.0 (1 samples)
+Reply time [ms]: response 13.3 transfer 0.0
+Reply size [B]: header 266.0 content 76.0 footer 0.0 (total 342.0)
+Reply status: 1xx=0 2xx=1858 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 1.70 system 8.18 (user 17.1% system 82.3% total 99.4%)
+Net I/O: 75.0 KB/s (0.6*10^6 bps)
+
+Errors: total 142 client-timo 142 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=260 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 3
+
+Total: connections 2000 requests 1887 replies 1811 test-duration 9.593 s
+
+Connection rate: 208.5 conn/s (4.8 ms/conn, <=91 concurrent connections)
+Connection time [ms]: min 0.8 avg 21.4 max 1002.0 median 10.5 stddev 89.7
+Connection time [ms]: connect 7.8
+Connection length [replies/conn]: 1.000
+
+Request rate: 196.7 req/s (5.1 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 247.4 avg 247.4 max 247.4 stddev 0.0 (1 samples)
+Reply time [ms]: response 16.8 transfer 0.0
+Reply size [B]: header 266.0 content 76.0 footer 0.0 (total 342.0)
+Reply status: 1xx=0 2xx=1811 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 1.32 system 8.22 (user 13.7% system 85.7% total 99.5%)
+Net I/O: 75.9 KB/s (0.6*10^6 bps)
+
+Errors: total 189 client-timo 189 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=280 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 3
+
+Total: connections 2000 requests 1864 replies 1785 test-duration 8.982 s
+
+Connection rate: 222.7 conn/s (4.5 ms/conn, <=100 concurrent connections)
+Connection time [ms]: min 0.9 avg 13.4 max 60.9 median 11.5 stddev 8.8
+Connection time [ms]: connect 7.6
+Connection length [replies/conn]: 1.000
+
+Request rate: 207.5 req/s (4.8 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 262.8 avg 262.8 max 262.8 stddev 0.0 (1 samples)
+Reply time [ms]: response 8.6 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=1785 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 1.26 system 7.67 (user 14.0% system 85.4% total 99.4%)
+Net I/O: 80.1 KB/s (0.7*10^6 bps)
+
+Errors: total 215 client-timo 215 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=300 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 4
+
+Total: connections 2000 requests 1825 replies 1766 test-duration 8.302 s
+
+Connection rate: 240.9 conn/s (4.2 ms/conn, <=118 concurrent connections)
+Connection time [ms]: min 0.9 avg 19.7 max 290.9 median 13.5 stddev 22.0
+Connection time [ms]: connect 6.9
+Connection length [replies/conn]: 1.000
+
+Request rate: 219.8 req/s (4.5 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 280.0 avg 280.0 max 280.0 stddev 0.0 (1 samples)
+Reply time [ms]: response 14.4 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=1766 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 1.17 system 7.09 (user 14.1% system 85.4% total 99.4%)
+Net I/O: 85.6 KB/s (0.7*10^6 bps)
+
+Errors: total 234 client-timo 234 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=320 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 4
+
+Total: connections 2000 requests 1783 replies 1710 test-duration 7.247 s
+
+Connection rate: 276.0 conn/s (3.6 ms/conn, <=139 concurrent connections)
+Connection time [ms]: min 0.8 avg 43.4 max 1036.8 median 17.5 stddev 85.4
+Connection time [ms]: connect 9.7
+Connection length [replies/conn]: 1.000
+
+Request rate: 246.0 req/s (4.1 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 288.8 avg 288.8 max 288.8 stddev 0.0 (1 samples)
+Reply time [ms]: response 34.7 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=1710 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.74 system 6.45 (user 10.2% system 89.0% total 99.2%)
+Net I/O: 95.1 KB/s (0.8*10^6 bps)
+
+Errors: total 290 client-timo 290 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=340 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 3
+
+Total: connections 2000 requests 1820 replies 1757 test-duration 7.530 s
+
+Connection rate: 265.6 conn/s (3.8 ms/conn, <=134 concurrent connections)
+Connection time [ms]: min 0.8 avg 24.5 max 308.2 median 13.5 stddev 35.1
+Connection time [ms]: connect 6.5
+Connection length [replies/conn]: 1.000
+
+Request rate: 241.7 req/s (4.1 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 311.6 avg 311.6 max 311.6 stddev 0.0 (1 samples)
+Reply time [ms]: response 19.2 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=1757 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.89 system 6.58 (user 11.8% system 87.4% total 99.3%)
+Net I/O: 94.0 KB/s (0.8*10^6 bps)
+
+Errors: total 243 client-timo 243 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=360 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 4
+
+Total: connections 2000 requests 1820 replies 1746 test-duration 7.519 s
+
+Connection rate: 266.0 conn/s (3.8 ms/conn, <=150 concurrent connections)
+Connection time [ms]: min 1.1 avg 28.9 max 1004.6 median 15.5 stddev 52.0
+Connection time [ms]: connect 8.2
+Connection length [replies/conn]: 1.000
+
+Request rate: 242.1 req/s (4.1 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 322.8 avg 322.8 max 322.8 stddev 0.0 (1 samples)
+Reply time [ms]: response 22.4 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=1746 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.93 system 6.53 (user 12.3% system 86.8% total 99.2%)
+Net I/O: 93.6 KB/s (0.8*10^6 bps)
+
+Errors: total 254 client-timo 254 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=380 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 6
+
+Total: connections 2000 requests 1806 replies 1733 test-duration 6.954 s
+
+Connection rate: 287.6 conn/s (3.5 ms/conn, <=164 concurrent connections)
+Connection time [ms]: min 1.7 avg 29.2 max 1989.6 median 15.5 stddev 64.7
+Connection time [ms]: connect 8.1
+Connection length [replies/conn]: 1.000
+
+Request rate: 259.7 req/s (3.9 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 328.8 avg 328.8 max 328.8 stddev 0.0 (1 samples)
+Reply time [ms]: response 22.2 transfer 0.0
+Reply size [B]: header 266.0 content 76.0 footer 0.0 (total 342.0)
+Reply status: 1xx=0 2xx=1733 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.77 system 6.12 (user 11.1% system 88.1% total 99.2%)
+Net I/O: 100.4 KB/s (0.8*10^6 bps)
+
+Errors: total 267 client-timo 267 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=400 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 4
+
+Total: connections 2000 requests 1803 replies 1747 test-duration 6.753 s
+
+Connection rate: 296.2 conn/s (3.4 ms/conn, <=167 concurrent connections)
+Connection time [ms]: min 0.9 avg 31.1 max 1015.8 median 17.5 stddev 54.3
+Connection time [ms]: connect 10.1
+Connection length [replies/conn]: 1.000
+
+Request rate: 267.0 req/s (3.7 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 345.6 avg 345.6 max 345.6 stddev 0.0 (1 samples)
+Reply time [ms]: response 23.8 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=1747 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.78 system 5.92 (user 11.5% system 87.7% total 99.2%)
+Net I/O: 104.1 KB/s (0.9*10^6 bps)
+
+Errors: total 253 client-timo 253 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=420 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 7
+
+Total: connections 2000 requests 1813 replies 1757 test-duration 6.331 s
+
+Connection rate: 315.9 conn/s (3.2 ms/conn, <=157 concurrent connections)
+Connection time [ms]: min 1.4 avg 37.3 max 1656.7 median 19.5 stddev 74.7
+Connection time [ms]: connect 7.6
+Connection length [replies/conn]: 1.000
+
+Request rate: 286.4 req/s (3.5 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 350.2 avg 350.2 max 350.2 stddev 0.0 (1 samples)
+Reply time [ms]: response 29.8 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=1757 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.69 system 5.59 (user 10.9% system 88.3% total 99.2%)
+Net I/O: 111.7 KB/s (0.9*10^6 bps)
+
+Errors: total 243 client-timo 243 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=440 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 6
+
+Total: connections 2000 requests 1742 replies 1681 test-duration 5.537 s
+
+Connection rate: 361.2 conn/s (2.8 ms/conn, <=176 concurrent connections)
+Connection time [ms]: min 2.0 avg 63.1 max 1090.3 median 27.5 stddev 112.0
+Connection time [ms]: connect 15.2
+Connection length [replies/conn]: 1.000
+
+Request rate: 314.6 req/s (3.2 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 336.0 avg 336.0 max 336.0 stddev 0.0 (1 samples)
+Reply time [ms]: response 48.2 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=1681 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.28 system 5.20 (user 5.1% system 93.9% total 99.0%)
+Net I/O: 122.3 KB/s (1.0*10^6 bps)
+
+Errors: total 319 client-timo 319 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=460 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 7
+
+Total: connections 2000 requests 1509 replies 1458 test-duration 5.904 s
+
+Connection rate: 338.8 conn/s (3.0 ms/conn, <=254 concurrent connections)
+Connection time [ms]: min 3.1 avg 132.2 max 1237.1 median 79.5 stddev 152.4
+Connection time [ms]: connect 20.3
+Connection length [replies/conn]: 1.000
+
+Request rate: 255.6 req/s (3.9 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 291.6 avg 291.6 max 291.6 stddev 0.0 (1 samples)
+Reply time [ms]: response 113.0 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=1458 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.28 system 5.56 (user 4.7% system 94.1% total 98.8%)
+Net I/O: 99.4 KB/s (0.8*10^6 bps)
+
+Errors: total 542 client-timo 542 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=480 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 5
+
+Total: connections 2000 requests 1519 replies 1437 test-duration 5.174 s
+
+Connection rate: 386.6 conn/s (2.6 ms/conn, <=287 concurrent connections)
+Connection time [ms]: min 3.5 avg 121.8 max 1074.6 median 65.5 stddev 163.0
+Connection time [ms]: connect 18.8
+Connection length [replies/conn]: 1.000
+
+Request rate: 293.6 req/s (3.4 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 287.4 avg 287.4 max 287.4 stddev 0.0 (1 samples)
+Reply time [ms]: response 103.0 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=1437 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.15 system 4.95 (user 2.9% system 95.7% total 98.6%)
+Net I/O: 112.2 KB/s (0.9*10^6 bps)
+
+Errors: total 563 client-timo 563 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=500 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 7
+
+Total: connections 2000 requests 1405 replies 1334 test-duration 4.999 s
+
+Connection rate: 400.1 conn/s (2.5 ms/conn, <=333 concurrent connections)
+Connection time [ms]: min 9.9 avg 171.9 max 997.9 median 100.5 stddev 159.9
+Connection time [ms]: connect 18.2
+Connection length [replies/conn]: 1.000
+
+Request rate: 281.1 req/s (3.6 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 154.2 transfer 0.0
+Reply size [B]: header 266.0 content 76.0 footer 0.0 (total 342.0)
+Reply status: 1xx=0 2xx=1334 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.11 system 4.82 (user 2.2% system 96.3% total 98.6%)
+Net I/O: 107.6 KB/s (0.9*10^6 bps)
+
+Errors: total 666 client-timo 666 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=520 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 8
+
+Total: connections 2000 requests 1264 replies 1134 test-duration 4.879 s
+
+Connection rate: 409.9 conn/s (2.4 ms/conn, <=372 concurrent connections)
+Connection time [ms]: min 12.1 avg 225.4 max 1253.0 median 140.5 stddev 215.0
+Connection time [ms]: connect 25.0
+Connection length [replies/conn]: 1.000
+
+Request rate: 259.1 req/s (3.9 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 200.6 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=1134 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.15 system 4.62 (user 3.1% system 94.7% total 97.8%)
+Net I/O: 94.8 KB/s (0.8*10^6 bps)
+
+Errors: total 866 client-timo 866 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=540 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 6
+
+Total: connections 2000 requests 1214 replies 1108 test-duration 4.702 s
+
+Connection rate: 425.3 conn/s (2.4 ms/conn, <=415 concurrent connections)
+Connection time [ms]: min 36.8 avg 227.1 max 1106.0 median 135.5 stddev 202.5
+Connection time [ms]: connect 27.8
+Connection length [replies/conn]: 1.000
+
+Request rate: 258.2 req/s (3.9 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 199.1 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=1108 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.10 system 4.50 (user 2.0% system 95.8% total 97.8%)
+Net I/O: 95.8 KB/s (0.8*10^6 bps)
+
+Errors: total 892 client-timo 892 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=560 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 12
+
+Total: connections 2000 requests 1145 replies 1039 test-duration 4.605 s
+
+Connection rate: 434.3 conn/s (2.3 ms/conn, <=397 concurrent connections)
+Connection time [ms]: min 39.3 avg 250.2 max 1088.3 median 151.5 stddev 211.7
+Connection time [ms]: connect 29.2
+Connection length [replies/conn]: 1.000
+
+Request rate: 248.6 req/s (4.0 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 221.2 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=1039 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.09 system 4.41 (user 1.9% system 95.8% total 97.7%)
+Net I/O: 91.8 KB/s (0.8*10^6 bps)
+
+Errors: total 961 client-timo 961 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=580 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 15
+
+Total: connections 2000 requests 1212 replies 1096 test-duration 5.165 s
+
+Connection rate: 387.2 conn/s (2.6 ms/conn, <=404 concurrent connections)
+Connection time [ms]: min 25.6 avg 233.7 max 1313.7 median 147.5 stddev 209.4
+Connection time [ms]: connect 32.5
+Connection length [replies/conn]: 1.000
+
+Request rate: 234.7 req/s (4.3 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 219.2 avg 219.2 max 219.2 stddev 0.0 (1 samples)
+Reply time [ms]: response 201.7 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=1096 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.28 system 4.78 (user 5.4% system 92.6% total 98.0%)
+Net I/O: 86.4 KB/s (0.7*10^6 bps)
+
+Errors: total 904 client-timo 904 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=600 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 10
+
+Total: connections 2000 requests 1225 replies 1127 test-duration 4.338 s
+
+Connection rate: 461.1 conn/s (2.2 ms/conn, <=407 concurrent connections)
+Connection time [ms]: min 48.9 avg 212.3 max 1050.7 median 122.5 stddev 189.5
+Connection time [ms]: connect 27.2
+Connection length [replies/conn]: 1.000
+
+Request rate: 282.4 req/s (3.5 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 185.3 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=1127 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.13 system 4.10 (user 3.0% system 94.5% total 97.6%)
+Net I/O: 105.5 KB/s (0.9*10^6 bps)
+
+Errors: total 873 client-timo 873 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=620 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 8
+
+Total: connections 2000 requests 1123 replies 993 test-duration 4.255 s
+
+Connection rate: 470.0 conn/s (2.1 ms/conn, <=418 concurrent connections)
+Connection time [ms]: min 48.8 avg 237.4 max 1088.1 median 153.5 stddev 202.7
+Connection time [ms]: connect 30.3
+Connection length [replies/conn]: 1.000
+
+Request rate: 263.9 req/s (3.8 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 207.0 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=993 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.12 system 4.03 (user 2.7% system 94.8% total 97.5%)
+Net I/O: 95.4 KB/s (0.8*10^6 bps)
+
+Errors: total 1007 client-timo 1007 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=640 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 6
+
+Total: connections 2000 requests 1098 replies 987 test-duration 4.170 s
+
+Connection rate: 479.6 conn/s (2.1 ms/conn, <=463 concurrent connections)
+Connection time [ms]: min 58.6 avg 265.5 max 1026.6 median 169.5 stddev 204.6
+Connection time [ms]: connect 30.0
+Connection length [replies/conn]: 1.000
+
+Request rate: 263.3 req/s (3.8 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 235.8 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=987 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.11 system 3.95 (user 2.7% system 94.7% total 97.4%)
+Net I/O: 96.5 KB/s (0.8*10^6 bps)
+
+Errors: total 1013 client-timo 1013 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=660 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 9
+
+Total: connections 2000 requests 1005 replies 867 test-duration 4.059 s
+
+Connection rate: 492.7 conn/s (2.0 ms/conn, <=536 concurrent connections)
+Connection time [ms]: min 56.1 avg 284.0 max 1029.9 median 178.5 stddev 221.1
+Connection time [ms]: connect 31.9
+Connection length [replies/conn]: 1.000
+
+Request rate: 247.6 req/s (4.0 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 252.4 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=867 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.10 system 3.86 (user 2.5% system 95.1% total 97.6%)
+Net I/O: 87.7 KB/s (0.7*10^6 bps)
+
+Errors: total 1133 client-timo 1133 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=680 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 10
+
+Total: connections 2000 requests 1027 replies 882 test-duration 3.959 s
+
+Connection rate: 505.2 conn/s (2.0 ms/conn, <=482 concurrent connections)
+Connection time [ms]: min 24.9 avg 266.3 max 1015.0 median 167.5 stddev 208.0
+Connection time [ms]: connect 29.9
+Connection length [replies/conn]: 1.000
+
+Request rate: 259.4 req/s (3.9 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 236.4 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=882 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.10 system 3.76 (user 2.6% system 94.9% total 97.5%)
+Net I/O: 91.6 KB/s (0.8*10^6 bps)
+
+Errors: total 1118 client-timo 1118 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=700 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 12
+
+Total: connections 2000 requests 966 replies 795 test-duration 3.880 s
+
+Connection rate: 515.5 conn/s (1.9 ms/conn, <=531 concurrent connections)
+Connection time [ms]: min 52.1 avg 283.7 max 1709.0 median 171.5 stddev 233.5
+Connection time [ms]: connect 29.1
+Connection length [replies/conn]: 1.000
+
+Request rate: 249.0 req/s (4.0 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 254.7 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=795 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.09 system 3.66 (user 2.3% system 94.4% total 96.7%)
+Net I/O: 84.9 KB/s (0.7*10^6 bps)
+
+Errors: total 1205 client-timo 1205 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=720 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 9
+
+Total: connections 2000 requests 897 replies 738 test-duration 3.787 s
+
+Connection rate: 528.1 conn/s (1.9 ms/conn, <=587 concurrent connections)
+Connection time [ms]: min 37.7 avg 305.0 max 1032.9 median 187.5 stddev 237.1
+Connection time [ms]: connect 30.0
+Connection length [replies/conn]: 1.000
+
+Request rate: 236.9 req/s (4.2 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 275.4 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=738 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.07 system 3.60 (user 1.8% system 95.2% total 97.0%)
+Net I/O: 80.7 KB/s (0.7*10^6 bps)
+
+Errors: total 1262 client-timo 1262 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=740 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 7
+
+Total: connections 2000 requests 906 replies 749 test-duration 3.700 s
+
+Connection rate: 540.5 conn/s (1.9 ms/conn, <=582 concurrent connections)
+Connection time [ms]: min 58.6 avg 312.1 max 1074.1 median 206.5 stddev 225.0
+Connection time [ms]: connect 29.9
+Connection length [replies/conn]: 1.000
+
+Request rate: 244.9 req/s (4.1 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 282.1 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=749 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.08 system 3.52 (user 2.1% system 95.0% total 97.1%)
+Net I/O: 83.8 KB/s (0.7*10^6 bps)
+
+Errors: total 1251 client-timo 1251 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=760 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 17
+
+Total: connections 2000 requests 875 replies 704 test-duration 3.631 s
+
+Connection rate: 550.9 conn/s (1.8 ms/conn, <=618 concurrent connections)
+Connection time [ms]: min 63.5 avg 329.5 max 983.8 median 204.5 stddev 239.2
+Connection time [ms]: connect 29.0
+Connection length [replies/conn]: 1.000
+
+Request rate: 241.0 req/s (4.1 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 300.4 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=704 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.07 system 3.43 (user 2.0% system 94.4% total 96.4%)
+Net I/O: 80.7 KB/s (0.7*10^6 bps)
+
+Errors: total 1296 client-timo 1296 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=780 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 10
+
+Total: connections 2000 requests 733 replies 562 test-duration 3.598 s
+
+Connection rate: 555.9 conn/s (1.8 ms/conn, <=671 concurrent connections)
+Connection time [ms]: min 59.8 avg 344.5 max 996.5 median 233.5 stddev 237.4
+Connection time [ms]: connect 30.9
+Connection length [replies/conn]: 1.000
+
+Request rate: 203.7 req/s (4.9 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 314.1 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=562 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.06 system 3.43 (user 1.7% system 95.4% total 97.1%)
+Net I/O: 65.6 KB/s (0.5*10^6 bps)
+
+Errors: total 1438 client-timo 1438 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=800 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 7
+
+Total: connections 2000 requests 361 replies 224 test-duration 3.517 s
+
+Connection rate: 568.6 conn/s (1.8 ms/conn, <=818 concurrent connections)
+Connection time [ms]: min 102.2 avg 287.2 max 1018.8 median 191.5 stddev 208.9
+Connection time [ms]: connect 27.3
+Connection length [replies/conn]: 1.000
+
+Request rate: 102.6 req/s (9.7 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 260.8 transfer 0.0
+Reply size [B]: header 266.0 content 76.0 footer 0.0 (total 342.0)
+Reply status: 1xx=0 2xx=224 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.06 system 3.37 (user 1.8% system 95.9% total 97.7%)
+Net I/O: 27.9 KB/s (0.2*10^6 bps)
+
+Errors: total 1776 client-timo 1776 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=820 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 15
+
+Total: connections 2000 requests 732 replies 489 test-duration 3.439 s
+
+Connection rate: 581.6 conn/s (1.7 ms/conn, <=737 concurrent connections)
+Connection time [ms]: min 91.0 avg 361.9 max 1032.7 median 246.5 stddev 236.0
+Connection time [ms]: connect 29.8
+Connection length [replies/conn]: 1.000
+
+Request rate: 212.8 req/s (4.7 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 332.6 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=489 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.07 system 3.27 (user 2.0% system 95.0% total 97.0%)
+Net I/O: 61.5 KB/s (0.5*10^6 bps)
+
+Errors: total 1511 client-timo 1511 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=840 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 11
+
+Total: connections 2000 requests 613 replies 375 test-duration 3.397 s
+
+Connection rate: 588.8 conn/s (1.7 ms/conn, <=790 concurrent connections)
+Connection time [ms]: min 109.6 avg 405.6 max 1026.0 median 306.5 stddev 247.2
+Connection time [ms]: connect 31.7
+Connection length [replies/conn]: 1.000
+
+Request rate: 180.5 req/s (5.5 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 374.5 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=375 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.08 system 3.21 (user 2.4% system 94.4% total 96.8%)
+Net I/O: 48.7 KB/s (0.4*10^6 bps)
+
+Errors: total 1625 client-timo 1625 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=860 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 17
+
+Total: connections 2000 requests 603 replies 381 test-duration 3.346 s
+
+Connection rate: 597.7 conn/s (1.7 ms/conn, <=793 concurrent connections)
+Connection time [ms]: min 101.9 avg 369.2 max 1018.0 median 273.5 stddev 225.1
+Connection time [ms]: connect 29.8
+Connection length [replies/conn]: 1.000
+
+Request rate: 180.2 req/s (5.5 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 340.3 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=381 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.06 system 3.18 (user 1.9% system 95.2% total 97.1%)
+Net I/O: 49.9 KB/s (0.4*10^6 bps)
+
+Errors: total 1619 client-timo 1619 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=880 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 13
+
+Total: connections 2000 requests 649 replies 477 test-duration 3.272 s
+
+Connection rate: 611.3 conn/s (1.6 ms/conn, <=762 concurrent connections)
+Connection time [ms]: min 121.5 avg 372.9 max 986.5 median 276.5 stddev 242.8
+Connection time [ms]: connect 27.8
+Connection length [replies/conn]: 1.000
+
+Request rate: 198.4 req/s (5.0 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 345.7 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=477 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.07 system 3.11 (user 2.1% system 95.0% total 97.1%)
+Net I/O: 61.8 KB/s (0.5*10^6 bps)
+
+Errors: total 1523 client-timo 1523 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=900 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 10
+
+Total: connections 2000 requests 616 replies 383 test-duration 3.256 s
+
+Connection rate: 614.2 conn/s (1.6 ms/conn, <=814 concurrent connections)
+Connection time [ms]: min 105.6 avg 366.0 max 1018.7 median 260.5 stddev 235.4
+Connection time [ms]: connect 28.3
+Connection length [replies/conn]: 1.000
+
+Request rate: 189.2 req/s (5.3 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 338.8 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=383 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.04 system 3.12 (user 1.2% system 95.7% total 96.9%)
+Net I/O: 51.7 KB/s (0.4*10^6 bps)
+
+Errors: total 1617 client-timo 1617 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=920 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 5
+
+Total: connections 2000 requests 588 replies 347 test-duration 3.200 s
+
+Connection rate: 625.0 conn/s (1.6 ms/conn, <=867 concurrent connections)
+Connection time [ms]: min 103.8 avg 385.9 max 1000.5 median 290.5 stddev 228.5
+Connection time [ms]: connect 29.0
+Connection length [replies/conn]: 1.000
+
+Request rate: 183.8 req/s (5.4 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 358.3 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=347 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.04 system 3.05 (user 1.4% system 95.4% total 96.8%)
+Net I/O: 48.3 KB/s (0.4*10^6 bps)
+
+Errors: total 1653 client-timo 1653 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=940 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 9
+
+Total: connections 2000 requests 637 replies 423 test-duration 3.127 s
+
+Connection rate: 639.6 conn/s (1.6 ms/conn, <=830 concurrent connections)
+Connection time [ms]: min 118.0 avg 380.8 max 984.5 median 281.5 stddev 235.9
+Connection time [ms]: connect 28.0
+Connection length [replies/conn]: 1.000
+
+Request rate: 203.7 req/s (4.9 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 353.9 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=423 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.06 system 2.97 (user 1.9% system 94.9% total 96.8%)
+Net I/O: 58.6 KB/s (0.5*10^6 bps)
+
+Errors: total 1577 client-timo 1577 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=960 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 13
+
+Total: connections 2000 requests 574 replies 345 test-duration 3.113 s
+
+Connection rate: 642.5 conn/s (1.6 ms/conn, <=871 concurrent connections)
+Connection time [ms]: min 129.0 avg 394.3 max 984.2 median 272.5 stddev 247.8
+Connection time [ms]: connect 27.9
+Connection length [replies/conn]: 1.000
+
+Request rate: 184.4 req/s (5.4 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 367.6 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=345 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.09 system 2.92 (user 3.0% system 93.9% total 96.9%)
+Net I/O: 49.1 KB/s (0.4*10^6 bps)
+
+Errors: total 1655 client-timo 1655 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=980 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 10
+
+Total: connections 2000 requests 514 replies 325 test-duration 3.081 s
+
+Connection rate: 649.1 conn/s (1.5 ms/conn, <=908 concurrent connections)
+Connection time [ms]: min 136.6 avg 412.9 max 1000.2 median 290.5 stddev 251.8
+Connection time [ms]: connect 30.5
+Connection length [replies/conn]: 1.000
+
+Request rate: 166.8 req/s (6.0 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 383.1 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=325 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.04 system 2.94 (user 1.3% system 95.5% total 96.8%)
+Net I/O: 46.2 KB/s (0.4*10^6 bps)
+
+Errors: total 1675 client-timo 1675 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+httperf --hog --timeout=1 --client=0/1 --server=172.17.60.201 --port=80 --uri=/ --rate=1000 --send-buffer=4096 --recv-buffer=16384 --num-conns=2000 --num-calls=1
+Maximum connect burst length: 8
+
+Total: connections 2000 requests 739 replies 501 test-duration 3.033 s
+
+Connection rate: 659.4 conn/s (1.5 ms/conn, <=880 concurrent connections)
+Connection time [ms]: min 96.9 avg 369.4 max 1017.1 median 253.5 stddev 235.2
+Connection time [ms]: connect 29.8
+Connection length [replies/conn]: 1.000
+
+Request rate: 243.6 req/s (4.1 ms/req)
+Request size [B]: 66.0
+
+Reply rate [replies/s]: min 0.0 avg 0.0 max 0.0 stddev 0.0 (0 samples)
+Reply time [ms]: response 340.0 transfer 0.0
+Reply size [B]: header 267.0 content 77.0 footer 0.0 (total 344.0)
+Reply status: 1xx=0 2xx=501 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.04 system 2.90 (user 1.5% system 95.5% total 96.9%)
+Net I/O: 71.2 KB/s (0.6*10^6 bps)
+
+Errors: total 1499 client-timo 1499 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+

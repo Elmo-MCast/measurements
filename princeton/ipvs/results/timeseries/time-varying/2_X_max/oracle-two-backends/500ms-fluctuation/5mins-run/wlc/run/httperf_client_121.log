@@ -1,0 +1,76 @@
+httperf --verbose --hog --timeout=50 --client=0/1 --server=172.16.116.116 --port=8080 --uri=/ --rate=16 --send-buffer=4096 --recv-buffer=16384 --num-conns=4800 --num-calls=1
+httperf: maximum number of open descriptors = 65535
+Maximum connect burst length: 1
+
+Connection lifetime histogram (time in ms):
+             :
+            10.5 394
+            11.5 1138
+            12.5 539
+            13.5 415
+            14.5 407
+            15.5 450
+            16.5 479
+            17.5 302
+            18.5 174
+            19.5 112
+            20.5 88
+            21.5 104
+            22.5 78
+            23.5 41
+            24.5 24
+            25.5 20
+            26.5 16
+            27.5 4
+            28.5 7
+            29.5 3
+            30.5 1
+             :
+            32.5 2
+             :
+            34.5 1
+            35.5 1
+
+Total: connections 4800 requests 4800 replies 4800 test-duration 299.951 s
+
+Connection rate: 16.0 conn/s (62.5 ms/conn, <=1 concurrent connections)
+Connection time [ms]: min 10.0 avg 14.5 max 35.7 median 13.5 stddev 3.5
+Connection time [ms]: connect 0.5
+Connection length [replies/conn]: 1.000
+
+Request rate: 16.0 req/s (62.5 ms/req)
+Request size [B]: 67.0
+
+Reply rate [replies/s]: min 16.0 avg 16.0 max 16.0 stddev 0.0 (299 samples)
+Percentages of the replies served at a given rate:
+   50%: 15
+   66%: 15
+   75%: 15
+   80%: 15
+   90%: 15
+   95%: 15
+   98%: 15
+   99%: 15
+  100%: 16
+
+Reply time [ms]: response 13.4 transfer 0.5
+Percentages of the requests served within a certain time (ms) :
+   50%: 12
+   66%: 14
+   75%: 15
+   80%: 15
+   90%: 17
+   95%: 20
+   98%: 21
+   99%: 23
+  100%: 34
+
+Reply size [B]: header 162.0 content 72.0 footer 1.0 (total 235.0)
+Reply status: 1xx=0 2xx=4800 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 252.23 system 47.16 (user 84.1% system 15.7% total 99.8%)
+Net I/O: 4.7 KB/s (0.0*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
