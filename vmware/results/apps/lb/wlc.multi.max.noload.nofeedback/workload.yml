@@ -1,0 +1,62 @@
+---
+
+workload:
+  lb:
+    apache_servers:
+      replicas: 14
+      replicas_per_node: 7
+      namespace: default
+      policy: wlc
+      feedback:
+        type: '' # Options: 'memcached' or'' to disable feedback
+        namespace: default
+        timeout: 0.001
+        metric: cpu  # cpu, loadavg
+        param: 0.5   # cpu:alpha_value, loadavg:max_load
+    httperf_clients:
+      replicas: 7
+      namespace: default
+      uri: /cgi-bin/cpu.py?loop_count=1 # /index.html, /cgi-bin/cpu.py?loop_count=1
+      num_conns: "{{ 2 * 2000 }}"
+      num_calls: 1
+      rate: "{{ 2 * 32 }}"
+      ramp: 10
+      iters: 1
+      timeout: 10
+    ipvsadm:
+      stats:
+        timeout: 0.01
+      feedback:
+        timeout: 0.001
+        enable: true
+    load:
+        type: '' # Options: 'stress_ng' or 'cpulimit' or 'cpulimit_host' or '' to disable load
+        stress_ng:
+          base_seed: 1
+          dockers: 4
+          cpus: 4
+          sleep: 0.5
+        cpulimit:
+          base_seed: 1
+          cores: 8
+          processes_per_core: 1
+          percentage: 50
+          sleep: 0.5
+        cpulimit_host:
+          base_seed: 1
+          cores: 8
+          processes_per_core: 1
+          percentage: 10
+          sleep: 0.5
+    nodes:
+      prme2-k8s-node-120:
+        nodetype: "apache"
+      prme3-k8s-node-120:
+        nodetype: "apache"
+      prme7-k8s-node-120:
+        nodetype: "httperf"
+      prme8-k8s-node-120:
+        nodetype: "other"
+      prme9-k8s-node-120:
+        nodetype: "other"
+
