@@ -11,4 +11,4 @@ docker run -d -p 8888:8888 --name jupyter \
 			--NotebookApp.password='sha1:090e0e9b7507:b5d41f836d73c79fc4402f514a8cba63efc2fe3d' \
 			--NotebookApp.certfile=/etc/ssl/notebooks.pem
 docker exec jupyter pip install --upgrade pip
-docker exec jupyter pip install pandas matplotlib seaborn statsmodels
+docker exec jupyter pip install pandas matplotlib seaborn statsmodels joblib bitstring
