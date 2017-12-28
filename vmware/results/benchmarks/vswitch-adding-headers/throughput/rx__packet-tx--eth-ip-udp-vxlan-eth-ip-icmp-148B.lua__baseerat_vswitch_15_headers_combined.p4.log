@@ -1,0 +1,24 @@
+[Device: id=0] Received 3742981 packets, current rate 3.74 Mpps, 9401.35 MBit/s, 10000.16 MBit/s wire rate.
+[Device: id=1] Received 3743513 packets, current rate 3.74 Mpps, 9401.21 MBit/s, 10000.01 MBit/s wire rate.
+[Device: id=0] Received 7485383 packets, current rate 3.74 Mpps, 9400.91 MBit/s, 9999.69 MBit/s wire rate.
+[Device: id=1] Received 7485980 packets, current rate 3.74 Mpps, 9401.07 MBit/s, 9999.86 MBit/s wire rate.
+[Device: id=0] Received 11227920 packets, current rate 3.74 Mpps, 9401.25 MBit/s, 10000.06 MBit/s wire rate.
+[Device: id=1] Received 11228477 packets, current rate 3.74 Mpps, 9401.15 MBit/s, 9999.95 MBit/s wire rate.
+[Device: id=0] Received 14970363 packets, current rate 3.74 Mpps, 9401.01 MBit/s, 9999.81 MBit/s wire rate.
+[Device: id=1] Received 14970961 packets, current rate 3.74 Mpps, 9401.11 MBit/s, 9999.91 MBit/s wire rate.
+[Device: id=0] Received 18712900 packets, current rate 3.74 Mpps, 9401.25 MBit/s, 10000.06 MBit/s wire rate.
+[Device: id=1] Received 18713459 packets, current rate 3.74 Mpps, 9401.15 MBit/s, 9999.95 MBit/s wire rate.
+[Device: id=0] Received 22455343 packets, current rate 3.74 Mpps, 9401.02 MBit/s, 9999.81 MBit/s wire rate.
+[Device: id=1] Received 22455942 packets, current rate 3.74 Mpps, 9401.12 MBit/s, 9999.91 MBit/s wire rate.
+[Device: id=0] Received 26197836 packets, current rate 3.74 Mpps, 9401.13 MBit/s, 9999.93 MBit/s wire rate.
+[Device: id=1] Received 26198438 packets, current rate 3.74 Mpps, 9401.13 MBit/s, 9999.93 MBit/s wire rate.
+[Device: id=0] Received 29940375 packets, current rate 3.74 Mpps, 9401.26 MBit/s, 10000.06 MBit/s wire rate.
+[Device: id=1] Received 29940941 packets, current rate 3.74 Mpps, 9401.15 MBit/s, 9999.95 MBit/s wire rate.
+[Device: id=0] Received 33682817 packets, current rate 3.74 Mpps, 9401.01 MBit/s, 9999.80 MBit/s wire rate.
+[Device: id=1] Received 33683431 packets, current rate 3.74 Mpps, 9401.11 MBit/s, 9999.91 MBit/s wire rate.
+[Device: id=0] Received 37799351 packets with 11868995900 bytes payload (including CRC).
+[Device: id=0] Received 3.742478 (StdDev 0.000054) Mpps, 9401.105202 (StdDev 0.135794) MBit/s, 9999.901732 (StdDev 0.144369) MBit/s wire rate on average.
+[Device: id=1] Received 38173879 packets with 11986598006 bytes payload (including CRC).
+[Device: id=1] Received 3.742486 (StdDev 0.000011) Mpps, 9401.124898 (StdDev 0.029610) MBit/s, 9999.922682 (StdDev 0.031375) MBit/s wire rate on average.
+Total Mpps: 7.4849644618439 (avg.), 6.4647500044481e-05 (stddev.)
+Total Mbps: 19999.824414048 (avg.), 0.17574388497473 (stddev.)
