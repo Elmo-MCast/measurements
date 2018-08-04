@@ -1,0 +1,17 @@
+Switch,Scheme,Event,Count (normalized)
+Core,DCN,join,1.64
+Core,DCN,leave,1.55
+Core,Elmo,join,0
+Core,Elmo,leave,0
+Spine,DCN,join,1.89
+Spine,DCN,leave,1.86
+Spine,Elmo,join,0.0015
+Spine,Elmo,leave,0.0023
+Leaf,DCN,join,1
+Leaf,DCN,leave,1
+Leaf,Elmo,join,0.0042
+Leaf,Elmo,leave,0.0061
+Hypervisor,DCN,join,1
+Hypervisor,DCN,leave,1
+Hypervisor,Elmo,join,0.33
+Hypervisor,Elmo,leave,0.49
